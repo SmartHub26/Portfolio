@@ -1,0 +1,118 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    
+}
+.contact-title{
+    position: relative;
+}
+.contact-title h1{
+    font-size: 80px;
+    padding: 0px 30px;
+
+    text-align: center;
+    font-weight: 600;
+}
+.contact-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    z-index: -1;
+}
+.contact-section{
+    display: flex;
+
+    gap: 150px;
+ 
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+.contact-left h1{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 80%, #b415ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contact-left p{
+    max-width: 550px;
+    color: #D8D8D8;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  
+    gap: 30px;
+}
+.contact-right label{
+    font-size: 22px;
+    color: #D8D8D8;
+    font-weight: 500;
+}
+.contact-right input{
+    border: none;
+    width: 700px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #1a1a5e;
+    color: #D8D8D8;
+    font-size: 20px;
+    font-family: outfit;
+}
+.contact-right textarea{
+    border: none;
+    width: 650px;
+    padding: 25px;
+    border-radius: 4px;
+    background: #1a1a5e;
+    color: #D8D8D8;
+    font-size: 20px;
+    font-family: outfit;
+}
+.contact-submit {
+
+    background: linear-gradient(270deg, #DF8908 50%, #b415ff 100%);
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: background-color 0.3s ease;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+}
+.contact-submit:hover {
+    background: linear-gradient(270deg, #b415ff 50%, #DF8908 100%);
+    color: #181c29;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

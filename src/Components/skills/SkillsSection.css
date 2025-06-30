@@ -1,0 +1,175 @@
+/* Section background */
+#skills {
+  background: transparent; /* or your bg-secondary/30 */
+  min-height: 100vh;
+  padding: 6rem 0 4rem 0;
+}
+
+/* Skills Section Title with Overlapping Pattern */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.skills-title {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.skills-title h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.02em;
+  padding: 0 2rem;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.skills-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+}
+
+/* Filter Buttons */
+.skills-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;            /* More gap between buttons */
+  margin: 1rem 0 3rem 0;  /* Shift filters up */
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.bg-primary {
+  background: linear-gradient(270deg, #DF8908 50%, #b415ff 100%) !important;
+  color: #181c29 !important;
+}
+
+.text-primary-foreground {
+  color: #181c29 !important;
+}
+
+.bg-secondary\/70 {
+  background: rgba(36, 37, 50, 0.7);
+}
+
+.text-foreground {
+  color: #fff;
+}
+
+.hover\:bg-secondary:hover {
+  background: #23243a;
+}
+
+/* Skills Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Skill Card */
+.bg-card {
+  background: #181c29;
+}
+.card-hover {
+  border-radius: 1rem;
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.18);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+.card-hover:hover {
+  box-shadow: 0 4px 32px 0 rgba(167,139,250,0.18);
+}
+
+.font-semibold.text-lg {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Progress Bar */
+.bg-secondary\/50 {
+  background: rgba(36, 37, 50, 0.5);
+}
+
+.rounded-full {
+  border-radius: 999px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-primary {
+  background:  #b415ff ;
+}
+
+.h-2 {
+  height: 8px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Percentage */
+.text-right {
+  text-align: right;
+}
+.text-sm {
+  font-size: 1rem;
+}
+.text-muted-foreground {
+  color: #a78bfa;
+  font-weight: 500;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+/* Utility classes for padding and margin */
+.p-6 { padding: 1.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-12 { margin-bottom: 3rem; }
+.py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.max-w-5xl { max-width: 80rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }

@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px; /* Use padding instead of margin for better alignment */
+    /* Remove margin: 20px 170px; */
+}
+
+.navbar h1 span {
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* Remove align-items/justify-content here—they don't apply to text */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    margin: 0 auto; /* This helps center the menu if needed */
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: a; /* Ensures button is pushed to the right */
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+    
+    .nav-connect {
+        display: none; /* Hide connect button on mobile */
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+}

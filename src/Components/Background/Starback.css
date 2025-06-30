@@ -1,0 +1,50 @@
+.star {
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+}
+.meteor {
+  background: linear-gradient(90deg, #fff, transparent);
+  border-radius: 2px;
+  position: absolute;
+}
+.StarBackground {
+position: fixed;
+z-index: -1;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none; /* So it doesn't block clicks */
+
+}
+@keyframes meteor-shoot {
+  0% {
+    transform: translate(0, 0) scaleX(1);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(400px, 200px) scaleX(1.5);
+    opacity: 0;
+  }
+}
+
+.meteor {
+  background: linear-gradient(267deg, #fff, transparent);
+  border-radius: 500px;
+  position: absolute;
+  animation: meteor-shoot 1s linear infinite;
+}
+
+.star {
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  width: 3px;   /* or set dynamically in JS */
+  height: 3px;  /* or set dynamically in JS */
+  box-shadow: 0 0 2px #fff; /* minimal, sharp edge */
+  opacity: 0.95;             /* nearly fully bright */
+}
